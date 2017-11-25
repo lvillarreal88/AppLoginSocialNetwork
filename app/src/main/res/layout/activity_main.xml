@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manhattan.app.apploginsocialnetwork.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/login_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        />
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_dialog"
+        android:text="Open Dialog"/>
+
+</android.support.design.widget.CoordinatorLayout>
